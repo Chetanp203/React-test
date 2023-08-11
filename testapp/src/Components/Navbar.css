@@ -1,0 +1,23 @@
+#nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: blueviolet;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.comps{
+    width: 90%;
+    text-align: right;
+}
+.comps ul{
+display: flex;
+float: right;
+}
+.comps ul li{
+    list-style: none;
+    padding-left: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}

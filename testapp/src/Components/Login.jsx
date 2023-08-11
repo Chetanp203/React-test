@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./../Components/Register.css"
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../Context/AuthContext';
+import { AuthContext } from '../Context/Auth-Context';
 import { useContext } from 'react';
 
 const Login = () => {

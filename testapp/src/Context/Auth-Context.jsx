@@ -54,32 +54,3 @@ export default AuthenticationProvider;
 
 
 
-
-////navbar////
-
-
-
-// import React, { useContext, useEffect, useState } from 'react'
-// import "./Navbar.css"
-// import { useNavigate } from 'react-router-dom'
-// import { AuthContext } from '../MyContext/AuthContext';
-
-// const Navbar = () => {
-//   const router = useNavigate();
-//   const { state, login ,logout} = useContext(AuthContext);
-//   console.log(state,"-state")
-//   const [userData, setUserData] = useState({name:"", email:"",password:"", role:"Buyer",cart:[]});
-//   const [user, setUser] = useState({});
-
-//   useEffect(()=> {
-//      if(state?.user?.email){
-//       setUser(state?.user)
-//      }else{
-//       setUser({});
-//      }
-//   },[state])
-
-
-
-
-

@@ -7,15 +7,7 @@ const Register = () => {
   
     const [userData, setUserData] = useState({name:"", email:"",password:""});
     const router = useNavigate();  
-    const [user, setUser] = useState();
-  
-    // useEffect(()=> {
-    //    if(state?.user){
-    //     setUser(state?.user)
-    //    }else{
-    //     setUser({});
-    //    }
-    // },[state])
+    // const [user, setUser] = useState();
   
     const handleChange= (event) => {
        setUserData({...userData, [event.target.name] : event.target.value})
