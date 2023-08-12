@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="comps">
         <ul>
           <li onClick={()=>router("/create-todo")}>CREATE TODO</li>
-          <li>All TODOS</li>
+          <li onClick={()=>router("/all-todos")}>All TODOS</li>
           <li>OWN TODOS</li>
           {!state?.user &&<li onClick={()=>router("/login")}>Login</li>}
           {state?.user &&<li onClick={logout}>Logout</li>}

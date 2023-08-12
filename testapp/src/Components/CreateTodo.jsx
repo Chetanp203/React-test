@@ -15,19 +15,20 @@ const CreateTodo = () => {
      const handletodoSubmit = (event) => {
         event.preventDefault();
         if(todoData.todo ){
-            const todoArray = JSON.parse(localStorage.getItem("Users")) || [];
+            const todoArray = JSON.parse(localStorage.getItem("Todos")) || [];
   const randomId=uuidv4();
             const todoObj = {
-                todo:"todo",
+                ...todoData,
                 id:randomId
             };
             todoArray.push(todoObj);
-            localStorage.setItem("Users", JSON.stringify(todoArray));
-            alert("Create todo Successfull!!!")
+            localStorage.setItem("Todos", JSON.stringify(todoArray));
+            alert("Create todo Successfull!!!");
             setTodoData({todo:""})
            
         } else {
-            alert("All fields mandatory")
+            alert("All fields mandatory");
+            setTodoData({todo:""})
         }
     }
 

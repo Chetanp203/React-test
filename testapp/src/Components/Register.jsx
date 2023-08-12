@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   
-    const [userData, setUserData] = useState({name:"", email:"",password:""});
+    const [userData, setUserData] = useState({name:"", email:"",password:"",ownTodo:[]});
     const router = useNavigate();  
     // const [user, setUser] = useState();
   
@@ -23,6 +23,7 @@ const Register = () => {
                 name: userData.name,
                 email: userData.email,
                 password: userData.password,
+                ownTodo:[],
             };
             array.push(userDataObj);
             localStorage.setItem("Users", JSON.stringify(array));
